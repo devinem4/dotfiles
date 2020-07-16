@@ -30,8 +30,13 @@ Update `~./profile`
 VERSION=v12.18.2
 DISTRO=linux-x64
 export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+export PATH=/home/mddevine/.npm-global/bin:$PATH
 ```
 
 Refresh profile with `$ . ~./profile`  
 Test with `$ node --version`
 
+```
+$ node -g install js-beautify
+$ js-beautify --version
+```
